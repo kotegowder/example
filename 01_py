@@ -1,0 +1,23 @@
+"""
+ Create a 5x5 array 
+ And print as 
+ 
+ O O O O O
+ O O O O O
+ O O O O O
+ O O O O O
+ O O O O O
+ 
+"""
+
+board = [[],[],[],[],[]]
+
+for i in range(0,5):
+    for j in range(0,5):
+        board[i].append('O')
+
+def print_board(board):
+    for row in board:
+        print " ".join(row)
+    
+print_board(board)
